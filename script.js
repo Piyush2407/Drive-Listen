@@ -69,7 +69,8 @@ const data = [
     ],
         music:[
             'http://backbonenetworks.streamguys.com/pierce',
-            'http://sarcheshmeh.icdndhcp.com:18452/stream'
+            'http://sarcheshmeh.icdndhcp.com:18452/stream',
+            'https://eu8.fastcast4u.com/proxy/clyedupq'
         ]
     },
     {
