@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Drive & Listen</title>
+</head>
+<body>
+    <div class="loading" id="loading">Loading........</div>
+      <div class="video-container">
+          <div id="player"></div>
+      </div>
+    <div class="sidebar-toggle" id="toggle">
+        <i class="fa fa-eye white" id="pre" aria-hidden="true"></i>
+    </div>
+    <div class="sidebar">
+        <h2>Drive & Listen</h2>
+        <div class="location-conatiner">
+            <h4>Scroll Down for more cities</h4>
+            <div class="locations">
+                <ul id="locations"></ul>
+            </div>
+        </div>
+
+        <div class="video-speed">
+            <h4>Car Speed</h4>
+            <div class="speed" id="speed">
+         </div>
+        </div>
+
+        <div class="car-noise">
+            <h4>Car Noise</h4>
+            <div class="mute" id="mute">Off</div>
+        </div>
+
+        <div class="audio">
+            <h4>Car Audio</h4>
+            <div class="audio-controls">
+                <div class="controls">
+                <i class="fa fa-step-backward" id="prev" aria-hidden="true"></i>
+                <i class="fa fa-play" id="play" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" id="next" aria-hidden="true"></i>
+             </div>
+            </div>
+            <div class="volume">
+                <input type="range"  min="1" max="100" value="50" id="volume" onchange="changeVolume(this)">
+            </div>
+        </div>
+
+        <audio id="music"  crossorigin autoplay></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
